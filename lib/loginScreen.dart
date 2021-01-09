@@ -31,7 +31,7 @@ class loginScreen extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.grey,
           body: Center(
             child: SingleChildScrollView(
               child: Column(
