@@ -38,7 +38,7 @@ class loginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
 
-                  Text('Login & SignUP Screen' , style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),),
+                  Text('TODO APP' , style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),),
                   SizedBox(
                     height: 100,
                   ),
@@ -59,6 +59,8 @@ class loginScreen extends StatelessWidget {
                                   controller: nameController,
                                   decoration: InputDecoration(
                                     focusColor: Colors.blue,
+                                    hintText: "Enter Email",
+                                    icon: Icon(Icons.email)
 
                                   ),
                                   cursorColor: Colors.red,
@@ -72,9 +74,10 @@ class loginScreen extends StatelessWidget {
                                   controller: passwordController,
                                   decoration: InputDecoration(
                                     focusColor: Colors.blue,
-
+                                      hintText: "Enter Password",
+                                      icon: Icon(Icons.lock)
                                   ),
-                                  cursorColor: Colors.red,
+                                  cursorColor: Colors.blue,
                                   obscureText: true,
                                   cursorHeight:20,
                                 ),
@@ -97,7 +100,7 @@ class loginScreen extends StatelessWidget {
                                   minWidth: double.maxFinite,
                                   height: 50,
                                   onPressed: () => registerUser(context),
-                                  color: Colors.blue,
+                                  color: Colors.red,
                                   child: Text('Register',
                                       style: TextStyle(color: Colors.white, fontSize: 16)),
                                   textColor: Colors.white,
