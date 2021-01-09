@@ -37,7 +37,12 @@ class loginScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20.0),
+                    child: Image.asset('image/logo.png',
+                      height: 200,
+                    ),
+                  ),
                   Text('TODO APP' , style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),),
                   SizedBox(
                     height: 100,
